@@ -1,0 +1,133 @@
+ body {
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-image: url(img/13.jpg);
+            background-size: cover;
+            backface-visibility: visible;
+            font-family: 'Poppins', sans-serif;
+            
+        }
+.h1{
+	text-align: right;
+	
+	
+}
+.h1 strong{
+	color: rgba(255,3,8,0.68);
+	font-size: 80px;
+	background-color: rgba(255,0,4,0.12);
+	box-shadow: 0px 7px 9px rgba(23,34,56);
+	text-shadow:0 6px 5px rgba(6,5,3,1.0);
+	border-radius: 20%;
+}
+h2, h3 {
+            font-weight: 900;
+            color: #ff0000; /* Theme color */
+			line-height:60px;
+            font-size: 120px;
+            opacity: 80%;
+            text-align: center;
+            
+        }
+p, a {
+            font-weight: 300;
+        }
+.game-grid {
+            
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .game-card {
+            background: #000000;
+            border-radius: 23px;
+            padding: 15px;
+			margin-top: 25px;
+			margin-bottom:25px;
+			color:white;
+			font-size:20px;
+            text-align: center;
+			opacity:85%;
+            box-shadow: 0 5px 5px rgba(0,5,0,6.1);
+        }
+        .game-info {
+            margin-bottom: 15px;
+			
+        }
+        .game-info img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 28px;
+        }
+        .download-options {
+            border-top: 1px solid white;
+            padding-top: 15px;
+        }
+        .download-btn {
+            display: inline-block;
+            background: #4CAF50;
+            color: #fff;
+            padding: 7px 32px;
+            text-decoration: none;
+            border-radius: 20px;
+            margin-right: 10px;
+            font-size: 19px;
+            box-shadow: 0 5px 5px rgba(3,7,4,7);
+            
+        }
+        .file-info {
+            font-size: 22px;
+            color: white;
+            margin-top: 5px;
+        }
+@media only screen and (max-width: 600px) {
+	
+	h1, h2, h3{font-size:30px;
+	
+	}
+
+
+}
+@media only screen and (max-width: 1024px) {
+	
+	h1, h2{font-size:50px;
+	
+	}
+	
+    h3{font-size:20px;}
+}
+@media only screen and (max-width: 360px) {
+	
+	h1, h2, h3{font-size:30px;
+	
+	}
+	
+    h3{font-size:20px;}
+}
+@media only screen and (max-width: 412px) {
+	
+	h1, h2, h3{font-size:30px;
+	
+	}
+	
+    h3{font-size:20px;}
+}
+@media only screen and (max-width: 430px) {
+	
+	h1, h2, h3{font-size:30px;
+	
+	}
+
+    h3{font-size:20px;}
+}
+@media only screen and (max-width: 540px) {
+	
+	h1, h2, h3{font-size:30px;
+	}
+}
+.introinfo{
+	text-align: center;
+	color: blanchedalmond;
+    background-color: rgba(255,3,3,0.41);
+	box-shadow:  0px 7px 9px rgba(23,34,56);
+}
