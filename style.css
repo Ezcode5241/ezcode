@@ -83,7 +83,7 @@ p, a {
 @media only screen and (max-width: 600px) {
 	
 	h1, h2, h3{font-size:30px;
-	
+	 light-height:80%;
 	}
 
 
@@ -91,38 +91,45 @@ p, a {
 @media only screen and (max-width: 1024px) {
 	
 	h1, h2{font-size:50px;
-	
+	 light-height:80%;
 	}
 	
-    h3{font-size:20px;}
+    h3{font-size:20px;
+       light-height:80%;}
 }
 @media only screen and (max-width: 360px) {
 	
 	h1, h2, h3{font-size:30px;
+		    light-height:80%;
 	
 	}
 	
-    h3{font-size:20px;}
+    h3{font-size:20px;
+       light-height:80%;}
 }
 @media only screen and (max-width: 412px) {
 	
 	h1, h2, h3{font-size:30px;
-	
+	 light-height:80%;
 	}
 	
-    h3{font-size:20px;}
+    h3{font-size:20px;
+       light-height:80%;}
 }
 @media only screen and (max-width: 430px) {
 	
 	h1, h2, h3{font-size:30px;
+		    light-height:80%;
 	
 	}
 
-    h3{font-size:20px;}
+    h3{font-size:20px;
+       light-height:80%;}
 }
 @media only screen and (max-width: 540px) {
 	
 	h1, h2, h3{font-size:30px;
+		   light-height:80%;
 	}
 }
 .introinfo{
