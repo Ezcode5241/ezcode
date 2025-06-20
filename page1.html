@@ -2,131 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Page 1 - PC Game Reviews</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3ZCOD3 - PC Game Reviews</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            background: url('img/pc-bg.jpg') center center/cover no-repeat fixed;
-            font-family: 'Poppins', sans-serif;
-            color: #fff;
-        }
-        header {
-            background-color: rgba(20,20,30,0.85);
-            padding: 32px 0 16px 0;
-            text-align: center;
-        }
-        header h1 {
-            color: #ff4444;
-            font-size: 3rem;
-            margin: 0;
-            letter-spacing: 2px;
-        }
-        header p {
-            font-size: 1.2rem;
-            color: #eee;
-            margin-top: 10px;
-        }
-        main {
-            max-width: 1100px;
-            margin: 48px auto 0 auto;
-            padding: 0 20px 40px 20px;
-        }
-        .game-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 32px;
-            margin-top: 16px;
-        }
-        .game-card {
-            background: rgba(10, 10, 30, 0.92);
-            border-radius: 20px;
-            padding: 24px;
-            box-shadow: 0 6px 32px rgba(0,0,0,0.45);
-            text-align: center;
-            transition: transform 0.18s;
-        }
-        .game-card:hover {
-            transform: translateY(-6px) scale(1.025);
-        }
-        .game-card img {
-            width: 90%;
-            max-width: 330px;
-            border-radius: 12px;
-            margin-bottom: 16px;
-            margin-top: 4px;
-        }
-        .game-card h2 {
-            font-size: 1.6rem;
-            color: #ff4444;
-            margin: 12px 0 8px 0;
-        }
-        .game-card p {
-            font-size: 1rem;
-            color: #eee;
-        }
-        .review-score {
-            color: #f9d923;
-            font-size: 1.1rem;
-            margin: 10px 0 6px 0;
-            font-weight: bold;
-        }
-        @media (max-width: 600px) {
-            header h1 { font-size: 2rem; }
-            .game-card { padding: 12px; }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>PC Game Reviews</h1>
-        <p>Honest reviews of the latest and greatest games for your PC. Find your next obsession!</p>
-    </header>
-    <main>
+    <div class="container">
+        <div class="main-title"><strong>PC Game Reviews</strong></div>
+        <p class="introinfo">
+            Honest reviews of the latest and greatest games for your PC. Find your next obsession!
+        </p>
         <div class="game-grid">
-            <!-- Game 1 -->
             <div class="game-card">
-                <img src="img/elden-ring.jpg" alt="Elden Ring screenshot">
-                <h2>Elden Ring</h2>
-                <div class="review-score">Score: 9.5 / 10</div>
-                <p>
-                    An epic open-world adventure from FromSoftware, combining intense soulslike combat with breathtaking exploration. 
-                    A must-play for RPG fans and challenge seekers.
-                </p>
+                <div class="game-info">
+                    <img src="img/elden-ring.jpg" alt="Elden Ring">
+                    <h3>Elden Ring</h3>
+                    <div class="review-score">9.5 / 10</div>
+                    <p>An epic open-world adventure from FromSoftware, combining intense soulslike combat with breathtaking exploration.</p>
+                </div>
             </div>
-            <!-- Game 2 -->
             <div class="game-card">
-                <img src="img/cyberpunk2077.jpg" alt="Cyberpunk 2077 screenshot">
-                <h2>Cyberpunk 2077</h2>
-                <div class="review-score">Score: 8.2 / 10</div>
-                <p>
-                    After major updates, Night City shines! Engaging story, stunning visuals, and deep role-playing. Still some bugs, but now worth a visit.
-                </p>
+                <div class="game-info">
+                    <img src="img/cyberpunk2077.jpg" alt="Cyberpunk 2077">
+                    <h3>Cyberpunk 2077</h3>
+                    <div class="review-score">8.2 / 10</div>
+                    <p>After major updates, Night City shines! Engaging story and stunning visuals. Now worth a visit.</p>
+                </div>
             </div>
-            <!-- Game 3 -->
             <div class="game-card">
-                <img src="img/valorant.jpg" alt="Valorant screenshot">
-                <h2>Valorant</h2>
-                <div class="review-score">Score: 8.7 / 10</div>
-                <p>
-                    Riot's tactical shooter blends precise gunplay with unique agent abilities. A top choice for competitive multiplayer action.
-                </p>
+                <div class="game-info">
+                    <img src="img/valorant.jpg" alt="Valorant">
+                    <h3>Valorant</h3>
+                    <div class="review-score">8.7 / 10</div>
+                    <p>Riot's tactical shooter blends precise gunplay with unique agent abilities. A top choice for competitive action.</p>
+                </div>
             </div>
-            <!-- Add more game cards as needed -->
+            <!-- Add more PC game cards if you like -->
         </div>
-    </main>
-<!-- Page Navigation Section -->
-<section class="page-navigation">
-  <h2>More Game Reviews</h2>
-  <div class="page-links">
-    <a href="page1.html" class="cool-link">
-      <span>Page 1: PC Game Reviews</span>
-    </a>
-    <a href="page2.html" class="cool-link">
-      <span>Page 2: Console Game Reviews</span>
-    </a>
-  </div>
-</section>
+        <a href="index.html" class="back-link">← Back to Main Page</a>
+    </div>
 </body>
 </html>
