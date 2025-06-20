@@ -256,3 +256,74 @@ h3 {
     .introinfo { font-size: 0.85em; }
     .back-link { font-size: 0.9rem; padding: 10px 10px; }
 }
+/* About Us Hero Section */
+.about-hero {
+    background: linear-gradient(120deg, #251e43 55%, #ff2255 100%);
+    padding: 3.5rem 0 2.5rem 0;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 6px 32px #0005;
+}
+.about-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 0.6rem;
+}
+.brand-accent {
+    color: #ffd700;
+    text-shadow: 0 2px 12px #ff225588;
+}
+.about-subtitle {
+    font-size: 1.25rem;
+    color: #fff9;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+/* About Us Content */
+.about-content {
+    max-width: 750px;
+    margin: 0 auto 2.5rem auto;
+    background: rgba(24,27,44,0.94);
+    border-radius: 18px;
+    box-shadow: 0 4px 20px #0003;
+    padding: 2.5rem 2.2rem 2rem 2.2rem;
+}
+.about-block {
+    margin-bottom: 2.2rem;
+}
+.about-block h2 {
+    color: #ff2255;
+    margin-bottom: 0.7rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+.about-block p {
+    color: #eaeaea;
+    font-size: 1.07rem;
+    line-height: 1.7;
+    margin-bottom: 0.3rem;
+}
+.about-list {
+    list-style: disc inside;
+    margin: 0.6rem 0 0 0.7rem;
+    padding-left: 0.3em;
+    color: #fff;
+    font-size: 1.07rem;
+    line-height: 1.6;
+}
+.about-link {
+    color: #ffd700;
+    text-decoration: underline;
+    word-break: break-all;
+}
+.about-link:hover { color: #ff2255; }
+
+/* Responsive for About Us */
+@media (max-width: 700px) {
+    .about-title { font-size: 1.5rem; }
+    .about-content { padding: 1.1rem 0.7rem 1.2rem 0.7rem; }
+    .about-block h2 { font-size: 1.1rem; }
+}
