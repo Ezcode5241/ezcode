@@ -1,107 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3ZCOD3 - Game Reviews</title>
+    <title>3ZCOD3 - Android Game Reviews</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="3zcod3/img/1 (13).jpg">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            background-image: url(img/13.jpg);
-            background-size: cover;
-            backface-visibility: visible;
-            font-family: 'Poppins', sans-serif;
-            line-height: 40px;
-        }
-        .h1 {
-            text-align: right;
-        }
-        .h1 strong {
-            color: rgba(255, 3, 8, 0.68);
-            font-size: 80px;
-            background-color: rgba(255, 0, 4, 0.12);
-            box-shadow: 0px 7px 9px rgba(23,34,56,0.4);
-            text-shadow: 0 6px 5px rgba(6,5,3,1.0);
-            border-radius: 20%;
-        }
-        h2, h3 {
-            font-weight: 500;
-            color: #ff0000;
-            line-height: 80%;
-            font-size: 120px;
-            opacity: 0.8;
-            text-align: center;
-        }
-        p, a {
-            font-weight: 300;
-        }
-        .game-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 40px;
-        }
-        .game-card {
-            background: #000000;
-            border-radius: 23px;
-            padding: 15px;
-            margin-top: 25px;
-            margin-bottom: 25px;
-            color: white;
-            font-size: 20px;
-            text-align: center;
-            opacity: 0.85;
-            box-shadow: 0 5px 5px rgba(0,5,0,0.61);
-        }
-        .game-info {
-            margin-bottom: 15px;
-        }
-    </style>
 </head>
 <body>
-    <div class="h1"><strong>3ZCOD3</strong></div>
-    <h2>Explore the Best Games for Android Devices</h2>
-    <section>
+    <div class="container">
+        <div class="main-title"><strong>3ZCOD3</strong></div>
+        <h2>Explore the Best Games for Android Devices</h2>
         <p class="introinfo">
             The Best website For Game Reviews<br>
-            Discover a collection of carefully crafted games designed to offer endless fun and immersive experiences for players of all kinds. At <strong>3ZCOD3</strong> you’ll find reviews, downloads, and more.<br>
-            <strong>All games are free to download and play</strong>, and our library includes something for everyone—from racing and action to casual adventures, each game promises hours of entertainment!
+            Discover a collection of carefully crafted games designed to offer endless fun and immersive experiences for players of all kinds.<br>
+            <strong>All games are free to download and play</strong>—from racing and action to casual adventures, each game promises hours of entertainment!
         </p>
-    </section>
-    <section id="game-catalog">
-        <h2>Our Games</h2>
-        <div class="game-grid">
-            <div class="game-card">
-                <div class="game-info">
-                    <img src="frlegends.jpg" alt="FR Legends game cover">
-                    <h3>FR Legends</h3>
-                    <p>A drifting and customization game that lets you experience thrilling racing action.</p>
-                    <p>For low-end devices (1 GB RAM).</p>
+        <section id="game-catalog">
+            <h2>Our Games</h2>
+            <div class="game-grid">
+                <!-- Example Android Game Card -->
+                <div class="game-card">
+                    <div class="game-info">
+                        <img src="img/frlegends.jpg" alt="FR Legends">
+                        <h3>FR Legends</h3>
+                        <p>A drifting and customization game that lets you experience thrilling racing action.</p>
+                        <p>For low-end devices (1 GB RAM).</p>
+                    </div>
+                    <div class="download-options">
+                        <a href="https://play.google.com/store/apps/details?id=com.fengiiley.frlegends" class="download-btn">Download</a>
+                        <p class="file-info">File size: 106 MB | Version: 1.2.1 | Last updated: 2024-07-15</p>
+                    </div>
                 </div>
-                <div class="download-options">
-                    <h4>Direct Download:</h4>
-                    <a href="https://play.google.com/store/apps/details?id=com.fengiiley.frlegends" class="download-btn">Download</a>
-                    <p class="file-info">File size: 106 MB | Version: 1.2.1 | Last updated: 2024-07-15</p>
-                </div>
+                <!-- Add more game cards as needed -->
             </div>
-            <!-- Add more .game-card blocks here for other games -->
-        </div>
-    </section>
-<!-- Page Navigation Section -->
-<section class="page-navigation">
-  <h2>More Game Reviews</h2>
-  <div class="page-links">
-    <a href="page1.html" class="cool-link">
-      <span>Page 1: PC Game Reviews</span>
-    </a>
-    <a href="page2.html" class="cool-link">
-      <span>Page 2: Console Game Reviews</span>
-    </a>
-  </div>
-</section>
+        </section>
+        <!-- Page Navigation Section -->
+        <section class="page-navigation">
+            <h2>More Game Reviews</h2>
+            <div class="page-links">
+                <a href="page1.html" class="cool-link"><span>Page 1: PC Game Reviews</span></a>
+                <a href="page2.html" class="cool-link"><span>Page 2: More PC Reviews</span></a>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
