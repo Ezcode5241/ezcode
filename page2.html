@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page 2 - PC Game Reviews (More Titles!)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #141e30 0%, #243b55 100%);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 40px auto 0 auto;
+      padding: 32px 16px 60px 16px;
+      background: rgba(0,0,0,0.6);
+      border-radius: 18px;
+      box-shadow: 0 8px 40px #0008;
+    }
+    h1 {
+      color: #ff2255;
+      text-align: center;
+      margin-bottom: 24px;
+      font-size: 2.6rem;
+      letter-spacing: 1px;
+    }
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 28px;
+      margin: 0;
+    }
+    .game-card {
+      background: rgba(34,34,54,0.97);
+      border-radius: 13px;
+      box-shadow: 0 4px 18px #000a;
+      padding: 18px 16px 24px 16px;
+      text-align: center;
+      transition: transform 0.23s, box-shadow 0.23s;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .game-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(120deg, #ff225566 20%, #6600ff33 85%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      z-index: 0;
+    }
+    .game-card:hover, .game-card:focus-within {
+      transform: scale(1.045) translateY(-8px) rotate(-1deg);
+      box-shadow: 0 12px 28px #ff225577;
+      z-index: 2;
+    }
+    .game-card:hover::before, .game-card:focus-within::before {
+      opacity: 0.23;
+    }
+    .game-card img {
+      width: 100%;
+      height: 165px;
+      object-fit: cover;
+      border-radius: 9px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 12px #222b;
+      background: #222;
+      z-index: 1;
+      position: relative;
+    }
+    .game-card h2 {
+      font-size: 1.18rem;
+      color: #f9d923;
+      margin: 0 0 6px 0;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      z-index: 2;
+      position: relative;
+    }
+    .review-score {
+      color: #ff2255;
+      font-weight: bold;
+      font-size: 1.04rem;
+      margin-bottom: 5px;
+      z-index: 2;
+      position: relative;
+    }
+    .game-card p {
+      font-size: 0.97rem;
+      color: #eaeaea;
+      margin-bottom: 0;
+      z-index: 2;
+      position: relative;
+    }
+    .back-link {
+      display: inline-block;
+      margin: 38px auto 0 auto;
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+      background: linear-gradient(90deg, #ff2255, #6600ff);
+      padding: 13px 40px;
+      border-radius: 11px;
+      font-weight: 700;
+      box-shadow: 0 3px 16px #ff225555;
+      letter-spacing: 1px;
+      font-size: 1.13rem;
+      transition: background 0.2s, transform 0.19s;
+    }
+    .back-link:hover, .back-link:focus {
+      background: linear-gradient(90deg, #6600ff, #ff2255);
+      transform: scale(1.06);
+    }
+    @media (max-width: 700px) {
+      .container { padding: 8px; }
+      .game-card img { height: 110px; }
+      h1 { font-size: 2rem; }
+      .back-link { padding: 11px 20px; font-size:1rem;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>PC Game Reviews – Page 2</h1>
+    <div class="game-grid">
+
+      <!-- Game 1 -->
+      <div class="game-card">
+        <img src="img/witcher3.jpg" alt="The Witcher 3: Wild Hunt">
+        <h2>The Witcher 3: Wild Hunt</h2>
+        <div class="review-score">9.8 / 10</div>
+        <p>A story-rich open-world RPG masterpiece. Deep narrative, huge world, and outstanding expansions.</p>
+      </div>
+      <!-- Game 2 -->
+      <div class="game-card">
+        <img src="img/doom-eternal.jpg" alt="DOOM Eternal">
+        <h2>DOOM Eternal</h2>
+        <div class="review-score">9.2 / 10</div>
+        <p>Fast, brutal, and endlessly satisfying FPS action. A must for shooter fans.</p>
+      </div>
+      <!-- Game 3 -->
+      <div class="game-card">
+        <img src="img/portal2.jpg" alt="Portal 2">
+        <h2>Portal 2</h2>
+        <div class="review-score">9.6 / 10</div>
+        <p>Ingenious puzzles and hilarious writing. The gold standard for first-person puzzle games.</p>
+      </div>
+      <!-- Game 4 -->
+      <div class="game-card">
+        <img src="img/csgo.jpg" alt="Counter-Strike: Global Offensive">
+        <h2>Counter-Strike: Global Offensive</h2>
+        <div class="review-score">9.0 / 10</div>
+        <p>Legendary tactical shooter. Highly competitive, with a massive esports scene.</p>
+      </div>
+      <!-- Game 5 -->
+      <div class="game-card">
+        <img src="img/hollow-knight.jpg" alt="Hollow Knight">
+        <h2>Hollow Knight</h2>
+        <div class="review-score">9.5 / 10</div>
+        <p>Atmospheric metroidvania with tight controls and an enchanting world.</p>
+      </div>
+      <!-- Game 6 -->
+      <div class="game-card">
+        <img src="img/gta5.jpg" alt="Grand Theft Auto V">
+        <h2>Grand Theft Auto V</h2>
+        <div class="review-score">9.3 / 10</div>
+        <p>Massive open world, cinematic storytelling, and endless online chaos.</p>
+      </div>
+      <!-- Game 7 -->
+      <div class="game-card">
+        <img src="img/overwatch.jpg" alt="Overwatch">
+        <h2>Overwatch</h2>
+        <div class="review-score">8.8 / 10</div>
+        <p>Team shooter with vibrant heroes and dynamic, objective-based maps.</p>
+      </div>
+      <!-- Game 8 -->
+      <div class="game-card">
+        <img src="img/rdr2.jpg" alt="Red Dead Redemption 2">
+        <h2>Red Dead Redemption 2</h2>
+        <div class="review-score">9.7 / 10</div>
+        <p>Stunning western epic. Immersive story, jaw-dropping visuals, and rich open world.</p>
+      </div>
+      <!-- Game 9 -->
+      <div class="game-card">
+        <img src="img/undertale.jpg" alt="Undertale">
+        <h2>Undertale</h2>
+        <div class="review-score">9.0 / 10</div>
+        <p>Innovative RPG with memorable characters and multiple endings. Heart and humor abound.</p>
+      </div>
+      <!-- Game 10 -->
+      <div class="game-card">
+        <img src="img/sekiro.jpg" alt="Sekiro: Shadows Die Twice">
+        <h2>Sekiro: Shadows Die Twice</h2>
+        <div class="review-score">9.4 / 10</div>
+        <p>Challenging action-adventure. Unique combat, beautiful settings, and deep lore.</p>
+      </div>
+      <!-- Game 11 -->
+      <div class="game-card">
+        <img src="img/stardew.jpg" alt="Stardew Valley">
+        <h2>Stardew Valley</h2>
+        <div class="review-score">9.1 / 10</div>
+        <p>Peaceful farming sim with deep relationships and endless replayability.</p>
+      </div>
+      <!-- Game 12 -->
+      <div class="game-card">
+        <img src="img/half-life-alyx.jpg" alt="Half-Life: Alyx">
+        <h2>Half-Life: Alyx</h2>
+        <div class="review-score">9.6 / 10</div>
+        <p>The gold standard for VR shooters. Immersive, atmospheric, and ground-breaking.</p>
+      </div>
+      <!-- Game 13 -->
+      <div class="game-card">
+        <img src="img/minecraft.jpg" alt="Minecraft">
+        <h2>Minecraft</h2>
+        <div class="review-score">9.5 / 10</div>
+        <p>Limitless creativity and adventure. A timeless sandbox for all ages.</p>
+      </div>
+      <!-- Game 14 -->
+      <div class="game-card">
+        <img src="img/bioshock.jpg" alt="BioShock Infinite">
+        <h2>BioShock Infinite</h2>
+        <div class="review-score">9.1 / 10</div>
+        <p>Stunning story-driven FPS with unforgettable set pieces and characters.</p>
+      </div>
+      <!-- Game 15 -->
+      <div class="game-card">
+        <img src="img/doom-2016.jpg" alt="DOOM (2016)">
+        <h2>DOOM (2016)</h2>
+        <div class="review-score">9.0 / 10</div>
+        <p>Relentless, fast-paced shooter action with a killer soundtrack.</p>
+      </div>
+      <!-- Game 16 -->
+      <div class="game-card">
+        <img src="img/valorant.jpg" alt="Valorant">
+        <h2>Valorant</h2>
+        <div class="review-score">8.7 / 10</div>
+        <p>Sharp tactical shooter with unique agents and competitive depth.</p>
+      </div>
+      <!-- Game 17 -->
+      <div class="game-card">
+        <img src="img/civ6.jpg" alt="Sid Meier's Civilization VI">
+        <h2>Sid Meier's Civilization VI</h2>
+        <div class="review-score">8.9 / 10</div>
+        <p>One more turn! Addictive strategy and endless ways to play history.</p>
+      </div>
+      <!-- Game 18 -->
+      <div class="game-card">
+        <img src="img/dota2.jpg" alt="Dota 2">
+        <h2>Dota 2</h2>
+        <div class="review-score">8.8 / 10</div>
+        <p>The king of MOBAs. Deep, complex, and fiercely competitive.</p>
+      </div>
+      <!-- Game 19 -->
+      <div class="game-card">
+        <img src="img/ffxiv.jpg" alt="Final Fantasy XIV">
+        <h2>Final Fantasy XIV</h2>
+        <div class="review-score">9.2 / 10</div>
+        <p>MMORPG excellence, epic storytelling and a welcoming community.</p>
+      </div>
+      <!-- Game 20 -->
+      <div class="game-card">
+        <img src="img/apex-legends.jpg" alt="Apex Legends">
+        <h2>Apex Legends</h2>
+        <div class="review-score">8.9 / 10</div>
+        <p>Top-tier battle royale with fast movement and squad-based tactics.</p>
+      </div>
+
+    </div>
+    <a href="index.html" class="back-link">← Back to Main Page</a>
+  </div>
+<!-- Page Navigation Section -->
+<section class="page-navigation">
+  <h2>More Game Reviews</h2>
+  <div class="page-links">
+    <a href="page1.html" class="cool-link">
+      <span>Page 1: PC Game Reviews</span>
+    </a>
+    <a href="page2.html" class="cool-link">
+      <span>Page 2: Console Game Reviews</span>
+    </a>
+  </div>
+</section>
+</body>
+</html>
