@@ -327,3 +327,50 @@ h3 {
     .about-content { padding: 1.1rem 0.7rem 1.2rem 0.7rem; }
     .about-block h2 { font-size: 1.1rem; }
 }
+/* Contact Button Style */
+.contact-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff2255, #6600ff 90%);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 16px 48px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin: 1.5rem 0 1rem 0;
+    box-shadow: 0 4px 22px #6600ff33;
+    transition: background 0.2s, transform 0.18s, box-shadow 0.18s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.contact-btn:hover,
+.contact-btn:focus {
+    background: linear-gradient(90deg, #6600ff 10%, #ff2255 100%);
+    transform: scale(1.06);
+    box-shadow: 0 8px 28px #ff225566;
+}
+
+/* Bio Textarea */
+.bio-textarea {
+    width: 95%;
+    max-width: 500px;
+    min-height: 110px;
+    border-radius: 13px;
+    border: none;
+    padding: 1rem;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 1.05rem;
+    margin: 1rem 0 1.5rem 0;
+    resize: vertical;
+    background: #23253a;
+    color: #fff;
+    box-shadow: 0 2px 8px #0001;
+    outline: none;
+    transition: box-shadow 0.16s, border 0.16s;
+}
+.bio-textarea:focus {
+    box-shadow: 0 4px 16px #ff225533;
+    border: 1.5px solid #ff2255;
+}
