@@ -1,3 +1,23 @@
+h1, .main-title {
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: #fff;
+    background: linear-gradient(90deg, #ff2255 0%, #6600ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 1.2rem;
+    text-shadow:
+        2px 4px 8px rgba(0,0,0,0.25),
+        0 2px 0 #ffd700;
+    border-left: 8px solid #ffd700;
+    padding: 0.4em 0.7em 0.4em 0.6em;
+    display: inline-block;
+    border-radius: 13px;
+}
 /* Base Reset & Font */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: 16px; }
